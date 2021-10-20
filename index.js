@@ -63,10 +63,17 @@ const questions = [
         when: ({ confirmContribution }) => confirmContribution
     },
     {
+        type: "confirm",
+        name: "confirmTests",
+        message: "Do you want to add tests?",
+        default: false
+    },
+    {
         // Tests
         type: "input",
         name: "tests",
-        message: "Please include tests to run, and their instructions: "
+        message: "Please include tests to run, and their instructions: ",
+        when: ({ confirmTests }) => confirmTests
     },
     {
         // Ask if license wanted
@@ -120,15 +127,23 @@ const questions = [
         when: ({ confirmLicense }) => confirmLicense
     },
     {
+        type: "confirm",
+        name: "confirmContact",
+        message: "Do you want to add contact info? ",
+        default: true
+    },
+    {
         // GitHub Username
         type: "input",
         name: "githubUsername",
         message: "What is your GitHub Username? ",
+        when: ({ confirmContact }) => confirmContact
     },
     {
         type: "input",
         name: "email",
-        message: "What is your email address? "
+        message: "What is your email address? ",
+        when: ({ confirmContact }) => confirmContact
     }
 ];
 
