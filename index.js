@@ -149,7 +149,21 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, content) {}
+function writeToFile(fileName, content) {
+    return new Promise((resolve, reject) => {
+        fs.writeFile(fileName, content, err => {
+            if (err) {
+                reject(err);
+                return;
+            }
+
+            resolve({
+                ok: true,
+                message: 'File created!'
+            });
+        });
+    });
+}
 
 
 // TODO: Create a function to initialize app
@@ -159,7 +173,7 @@ function init() {
             return generateMarkdown(data);
         })
         .then(markdown => {
-            console.log(markdown);
+            return writeToFile("./dist/README.md" ,markdown);
         })
 }
 

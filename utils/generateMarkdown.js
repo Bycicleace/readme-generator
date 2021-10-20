@@ -33,7 +33,7 @@ ${data.description}
 
   // Add Table Of Contents
   tableOfContents.forEach(item => {
-    content += `  ${item}
+    content += `- ${item}
 `;
   });
 
@@ -87,8 +87,8 @@ ${data.license}
     content += `
     
 ## Questions
-My [GitHub](https://github.com/${data.githubUsername})
-My [Email](mailto:${data.email})
+- My [GitHub](https://github.com/${data.githubUsername})
+- My [Email](mailto:${data.email})
 `
   }
 
