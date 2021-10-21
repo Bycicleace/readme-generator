@@ -24,6 +24,16 @@ function generateMarkdown(data) {
   // Add Title, Description, and TOC header to content
   content = `
 # ${data.title}
+`
+
+if (data.confirmLicense) {
+  content += `
+
+![Licence Badge](https://img.shields.io/static/v1?label=License&message=${data.license.replace(/ /g,"%20")}&color=blue)
+`
+}
+
+`
 
 ## Description
 ${data.description}

@@ -1,34 +1,11 @@
 
-# Sweet
+# This is a project
 
-## Description
-nothing
 
-## Table of Contents
+![Licence Badge](https://img.shields.io/static/v1?label=License&message=BSD%202-clause%20"Simplified"%20license&color=blue)
 - [Description](#description)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contribution](#contribution)
 - [License](#License)
-- [Questions](#questions)
-
-
-## Installation
-Do a few things
-
-
-## Usage
-Use it well
-
-    
-## Contribution
-No one is allowes to contribute
 
     
 ## License
-Boost Software License 1.0
-
-    
-## Questions
-- My [GitHub](https://github.com/Bycicleace)
-- My [Email](mailto:elliott.kvamme@gmail.com)
+BSD 2-clause "Simplified" license
