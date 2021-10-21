@@ -88,7 +88,7 @@ ${data.tests}
     content += `
     
 ## License
-${data.license}
+This code is covered under ${data.license}
 `;
   }
 
