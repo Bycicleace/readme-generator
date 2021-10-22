@@ -16,9 +16,9 @@ function generateMarkdown(data) {
   tableOfContents.push("[Description](#description)");
   if (data.confirmInstall) {tableOfContents.push("[Installation](#installation)")};
   if (data.confirmUsage) {tableOfContents.push("[Usage](#usage)")}
-  if (data.confirmContribution) {tableOfContents.push("[Contribution](#contribution)")}
+  if (data.confirmContribution) {tableOfContents.push("[Contributing](#contributing)")}
   if (data.confirmTests) {tableOfContents.push("[Tests](#tests)")}
-  if (data.confirmLicense) {tableOfContents.push("[License](#License)")}
+  if (data.confirmLicense) {tableOfContents.push("[License](#license)")}
   if (data.confirmContact) {tableOfContents.push("[Questions](#questions)")}
 
   // Add Title, Description, and TOC header to content
@@ -33,7 +33,7 @@ if (data.confirmLicense) {
 `
 }
 
-`
+content += `
 
 ## Description
 ${data.description}
@@ -69,7 +69,7 @@ ${data.usage}
   if (data.confirmContribution) {
     content += `
     
-## Contribution
+## Contributing
 ${data.contribution}
 `;
   }
