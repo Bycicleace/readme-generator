@@ -16,3 +16,7 @@ First, clone the repository. Then, at the command line, type `npm install` to in
 
 ## Usage
 After installing the required modules, at the command line, type `node index.js` to get started. From there, answer each prompt. After all prompts are answered, then you will find your README file in the "dist" folder in your repository
+
+
+## Instructional Video
+You can find an instructional video [here](https://youtu.be/NXEHHhx-eWs)
